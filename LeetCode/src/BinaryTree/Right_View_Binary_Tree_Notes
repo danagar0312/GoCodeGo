@@ -1,0 +1,17 @@
+2 Approach
+
+BFS :
+
+- declare queue. add root node to it.
+- iterate while the queue is not empty
+- iterate through the current size of the queue until size reaches 0, poll the last element only when the size reaches 0 which will be the rightmost element
+- if the node left and right child is not null, add to the queue again.
+
+DFS :
+- only difference is firstly we are passing right and left node to the memory stack recursively.
+- maintain currentDepth variable - 0, which initially represent root node level.
+- start with depth = 1
+- create function which takes root node
+- if the currentDepth is less than depth, which is like 1 > 0, then node will be added to the stack memory
+then increase currentDepth by 1. This will be the left most node of the node(as we pass left and right to the memory)
+- if the node right and then left child is not null, pass them recurrsively to the function

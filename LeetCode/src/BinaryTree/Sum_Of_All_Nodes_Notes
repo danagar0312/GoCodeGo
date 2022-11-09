@@ -1,0 +1,4 @@
+- pass first node to the function
+- if it is null, return 0
+- if not, then node value is added in the starting to main sum, and recurssively left and right will be passed to the
+function.
